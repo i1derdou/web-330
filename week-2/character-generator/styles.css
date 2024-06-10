@@ -3,9 +3,15 @@
   Chapter 1
   Programming Assignment
 
-  Author:
-  Date:
-  Filename:
+  Author: David Clemens
+  Date: 2024-06-09
+  Filename: styles.css
 */
 
 /* Your CSS goes here */
+div #characterOutput strong {
+  color: brown;
+}
+div #characterOutput {
+  color: #333333;
+}

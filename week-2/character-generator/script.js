@@ -3,23 +3,41 @@
   Chapter 1
   Programming Assignment
 
-  Author:
-  Date:
+  Author: David Clemens
+  Date: 2024-06-09
   Filename:
 */
 
 "use strict";
 
 function createCharacter(name, gender, characterClass) {
-  // TODO: Implement this function
+  return {
+    getName: function() {
+        return name;
+    },
+    getGender: function() {
+        return gender;
+    },
+    getClass: function() {
+        return characterClass;
+    }
+  };
 }
 
 document.getElementById("generateHero").addEventListener("click", function(e) {
+
+  // Prevent form from submitting
   e.preventDefault();
 
-  // TODO: Get form values
+  // Get form values
+  const name = document.getElementById('heroName').value;
+  const gender = document.getElementById('heroGender').value;
+  const characterClass = document.getElementById('heroClass').value;
 
-  // TODO: Create character
+  // Create character
+  const character = createCharacter(name, gender, characterClass);
 
-  // TODO: Display character information
+  // Display character information
+  document.getElementById('characterOutput').innerHTML = '<br><strong>Name:</strong> ' + character.getName() + '<br><strong>Gender:</strong> ' + character.getGender() + '<br><strong>Class:</strong> ' + character.getClass();
+
 });

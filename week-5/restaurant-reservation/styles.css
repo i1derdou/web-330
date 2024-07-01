@@ -1,11 +1,79 @@
-/*
-  Pragmatic JavaScript
-  Chapter 2
-  Programming Assignment
+/* Pragmatic JavaScript
+   Chapter 2
+   Programming Assignment
 
-  Author:
-  Date:
-  Filename:
+   Author:  David Clemens
+   Date:    2024-06-30
+   Filename:style.css
 */
 
-/* Add your CSS styles here */
+/* Reset some basic elements to ensure consistency across browsers */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f2f5;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.form-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  width: 300px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+input[type="submit"] {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+#message {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #d9534f; /* Default to error color */
+}
+
+#message.success {
+  color: #5cb85c;
+}

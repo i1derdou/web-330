@@ -11,19 +11,35 @@
       Filename: index.html
     -->
     <title>Table Reservation</title>
+    <!-- Link to the external stylesheet for styling the page -->
     <link rel="stylesheet" type="text/css" href="styles.css" />
   </head>
   <body>
+    <!-- Container for the form -->
     <div class="form-container">
+      <!-- Table reservation form -->
       <form id="reservationForm">
+        <!-- Label and input for the user's name -->
         <label for="name">Name:</label><br />
         <input type="text" id="name" name="name" /><br />
+        <!-- Label and select dropdown for table number selection -->
         <label for="tableNumber">Table Number:</label><br />
-        <input type="number" id="tableNumber" name="tableNumber" /><br />
+        <select id="tableNumber" name="tableNumber">
+          <option value="" disabled selected>Select a table</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select><br />
+        <!-- Submit button for the form -->
         <input type="submit" value="Reserve" />
       </form>
+      <!-- Paragraph element to display messages to the user -->
       <p id="message"></p>
     </div>
+    <!-- Link to the external JavaScript file for form handling -->
     <script src="script.js"></script>
   </body>
 </html>
+

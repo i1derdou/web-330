@@ -6,26 +6,31 @@
       Chapter 4
       Programming Assignment
 
-      Author:
-      Date:
-      Filename:
+      Author:   David Clemens
+      Date:     2024-07-21
+      Filename: index.html
     -->
-    <link rel="stylesheet" type="text/css" href="styles.css" />
-  </head>
-  <body>
-    <div class="form-container">
-      <form id="movie-form">
-        <input type="text" id="title-input" placeholder="Enter movie title" />
-        <button type="submit">Search</button>
-      </form>
-      <div id="movie-info">
-        <h2 id="movie-title"></h2>
-        <p id="movie-director"></p>
-        <p id="movie-year"></p>
-        <p id="movie-synopsis"></p>
-      </div>
-      <p id="error-message"></p>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Information</title>
+    <link rel="stylesheet" href="styleS.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Movie Information</h1>
+        <form id="movie-form">
+            <label for="title">Movie Title:</label>
+            <input type="text" id="title" name="title" required>
+            <button type="submit">Submit</button>
+        </form>
+        <div id="movie-info">
+            <h2 id="movie-title"></h2>
+            <p><strong>Director:</strong> <span id="movie-director"></span></p>
+            <p><strong>Release Year:</strong> <span id="movie-year"></span></p>
+            <p><strong>Synopsis:</strong> <span id="movie-synopsis"></span></p>
+        </div>
+        <div id="error-m0essage" class="hidden"></div>
     </div>
     <script src="script.js"></script>
-  </body>
+</body>
 </html>
